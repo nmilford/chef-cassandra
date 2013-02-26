@@ -1,0 +1,13 @@
+maintainer       "Nathan Milford"
+maintainer_email "nathan@milford.io"
+license          "Apache v2.0"
+description      "Installs/Configures Apache Cassandra"
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
+version          "0.1.0"
+depends          "java"
+depends          "collectd"
+depends          "monit"
+provides         "service[cassandra]"
+supports         "redhat"
+supports         "centos"
+recipe           "cassandra", "Installs Apache Cassandra."
